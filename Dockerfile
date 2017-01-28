@@ -1,7 +1,7 @@
 FROM continuumio/miniconda3
 MAINTAINER Robin Ricard
 
-RUN /opt/conda/bin/conda install -y jupyter openblas scikit-learn pandas gensim nltk murmurhash tensorflow
+RUN /opt/conda/bin/conda install -y jupyter openblas scikit-learn pandas gensim nltk murmurhash tensorflow conda-forge jupyterlab
 RUN mkdir /opt/notebooks
 
 EXPOSE 8888
